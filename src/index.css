@@ -1,0 +1,112 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+:root {
+  font-family: 'Poppins', sans-serif;
+  --primaryColor: #608AF5;
+  --primaryTextColor: #002265;
+  --secondaryTextColor: #14279B;
+  --normalTextColor: #3F3D56;
+
+  --regularText: 400;
+  --mediumText: 500;
+  --semiBoldText: 600;
+}
+
+/* a {
+  font-weight: var(--mediumText);
+  color: var(--primaryColor);
+  text-decoration: none;
+}
+
+a:hover {
+  color: #535bf2;
+} */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  margin: 0 auto;
+  padding: 0;
+  max-width: 1440px;
+  width: 80%;
+  min-height: 100vh;
+}
+
+html {
+  background-image: url("./assets/icons/wave.png");
+  background-position: bottom;
+  background-repeat: no-repeat;
+  /* max-width: 100wh; */
+}
+
+h1 {
+  font-weight: var(--mediumText);
+  color: var(--primaryTextColor);
+}
+
+button {
+  border-radius: 10px;
+  background-color: var(--primaryColor);
+  color: white;
+  font-size: 25px;
+  font-weight: var(--semiBoldText);
+  padding: 10px 18px;
+}
+
+button:hover {
+  background-color: #646cff;
+  cursor: pointer;
+  transform: scale(1.1);
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 300ms;
+  transition-delay: 150ms;
+}
+
+/* button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+} */
+
+li {
+  padding: 0 2rem;
+  font-size: 25px;
+  font-weight: var(--regularText);
+  color: #212121;
+
+  &:hover {
+    cursor: pointer;
+    transform: scale(1.5);
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+    transition-duration: 300ms;
+    transition-delay: 150ms;
+  }
+}
+
+
+/* @media screen and (width < 1280px) {
+  body {
+    max-width: 1280px;
+
+  }
+}
+@media screen and (width < 1024px) {
+  body {
+    max-width: 1024px;
+
+  }
+} */
